@@ -241,6 +241,7 @@
             localStorage.setItem('ammoman', 0)
             btnh.classList.remove('hide')
             mankyp.classList.add('hide')
+            kolv.innerHTML = localStorage.getItem('ammoall');
         }
         krest2.onclick = function () {
             let res2 = localStorage.getItem('ammoall') - localStorage.getItem('skokpid') * 140;
@@ -248,7 +249,8 @@
             localStorage.setItem('skokpid', 0)
             localStorage.setItem('ammopid', 0)
             btnh.classList.remove('hide')
-            mankyp.classList.add('hide')
+            pidkyp.classList.add('hide')
+            kolv.innerHTML = localStorage.getItem('ammoall');
         }
         krest3.onclick = function () {
             let res3 = localStorage.getItem('ammoall') - localStorage.getItem('skokpid2') * 100;
@@ -256,7 +258,8 @@
             localStorage.setItem('skokpid2', 0)
             localStorage.setItem('ammopid2', 0)
             btnh.classList.remove('hide')
-            mankyp.classList.add('hide')
+            pidkyp2.classList.add('hide')
+            kolv.innerHTML = localStorage.getItem('ammoall');
         }
 
         oform.onclick = function () {
