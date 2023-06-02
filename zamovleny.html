@@ -221,19 +221,19 @@
         let email = document.querySelector('.email');
         let adres = document.querySelector('.adres');
         let fib = document.querySelector('.fib');
-        let transporter = nodemailer.createTransport({
-            service: 'gmail',
-            auth: {
-                user: 'bobrikkekat2.com', // ваш адрес електронної пошти, від якої відправляється лист
-                pass: 'C1f9i9f8' // ваш пароль для входу в Gmail
-            }
-        });
-        let mailOptions = {
-            from: 'bobrikkekat2.com', // ваш адрес електронної пошти, від якої відправляється лист
-            to: 'bobrikkekat3.com', // адреса електронної пошти отримувача
-            subject: 'Замовлення',
-            text: 'Замовлення: ' + 'Манкала: ' + skokman + 'Підставка з дуба: ' + skokpid + 'Підставка з бука: ' + skokpid2 + 'Адрес та номер відділення пошти: ' + adres.value + 'ФІБ' + fib  // текстовий вміст повідомлення
-        };
+        // let transporter = nodemailer.createTransport({
+        //     service: 'gmail',
+        //     auth: {
+        //         user: 'bobrikkekat2.com', // ваш адрес електронної пошти, від якої відправляється лист
+        //         pass: 'C1f9i9f8' // ваш пароль для входу в Gmail
+        //     }
+        // });
+        // let mailOptions = {
+        //     from: 'bobrikkekat2.com', // ваш адрес електронної пошти, від якої відправляється лист
+        //     to: 'bobrikkekat3.com', // адреса електронної пошти отримувача
+        //     subject: 'Замовлення',
+        //     text: 'Замовлення: ' + 'Манкала: ' + skokman + 'Підставка з дуба: ' + skokpid + 'Підставка з бука: ' + skokpid2 + 'Адрес та номер відділення пошти: ' + adres.value + 'ФІБ' + fib  // текстовий вміст повідомлення
+        // };
         krest1.onclick = function () {
             let res = localStorage.getItem('ammoall') - localStorage.getItem('skokman') * 1150;
             localStorage.setItem('ammoall', res)
