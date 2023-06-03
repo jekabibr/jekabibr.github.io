@@ -65,7 +65,7 @@ img {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 300;
-    font-size: 44px;
+    /* font-size: 44px; */
     line-height: 48px;
     letter-spacing: -0.03em;
     color: #FFFFFF;
@@ -78,7 +78,7 @@ img {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 300;
-    font-size: 44px;
+    /* font-size: 44px; */
     line-height: 48px;
     letter-spacing: -0.02em;
     color: #FFFFFF;
@@ -88,7 +88,10 @@ img {
     display: flex;
     flex-wrap: wrap;
 }
-
+.text{
+    display: flex;
+    flex-wrap: wrap;
+}
 .p11 {
     font-family: 'Inter';
     font-style: normal;
@@ -102,7 +105,7 @@ img {
 
 .p11 {
     top: 53px;
-    right: 83px;
+    right: 63px;
 }
 
 .img {
